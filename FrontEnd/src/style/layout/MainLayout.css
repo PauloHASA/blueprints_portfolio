@@ -1,0 +1,54 @@
+
+.row.header-MainLayout{
+  padding: 8px 24px 0 24px;
+
+  .col-4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+
+    .btn-login{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      button{
+        width: 180px;
+        height: 48px;
+        border-radius: 4px;
+
+        background: transparent;
+        border: none;
+
+        font-family: var(--font);
+        font-weight: 600;
+        font-size: var(--16px);
+        line-height: 100%;
+        letter-spacing: 0%;
+      }
+
+      button.login-btn{
+        color: #242424;
+      }
+
+      button.register-btn{
+        background: #242424;
+        color: #FFFFFF;
+      }
+
+    }
+
+    .btnMode{
+      background: transparent;
+      border: none;
+
+      .lightMode{
+        color: #FFFFFF;
+      }
+      .darkMode{
+        color: #242424;
+      }
+    }
+  } 
+}
