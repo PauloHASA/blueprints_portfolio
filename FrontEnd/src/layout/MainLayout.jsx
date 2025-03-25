@@ -73,7 +73,7 @@ function MainLayout() {
         </div>
 
     </header>
-    <main>
+    <main className="main-MainLayout">
 
       <Outlet />
     </main>

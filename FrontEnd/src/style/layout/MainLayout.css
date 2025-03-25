@@ -52,3 +52,7 @@
     }
   } 
 }
+
+.main-MainLayout{
+  height: calc(100vh - 74px);
+}

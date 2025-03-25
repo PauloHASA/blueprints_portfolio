@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
 
-  --font: 'Inter', sans-serif;
+  --font-Inter: 'Inter', sans-serif;
+  --font-Bebas: 'Bebas Neue', sans-serif;
+
   --12px: 0.8rem;
   --14px: 0.9rem;
   --16px: 1rem;
   --20px: 1.25rem;
   --24px: 1.5rem;
+  --40px: 2.5rem;
+
+  --color-back: #242424;
+  --color-white: #F2F2F2;
 }
 
 body.light {
@@ -36,4 +43,36 @@ h5,
 button {
   margin: 0;
   padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+
+}
+
+.default-btn{
+  width: 200px;
+  height: 48px;
+  border-radius: 4px;
+
+  background: var(--color-back);
+  color: var(--color-white);
+
+  font-family: var(--font-Inter);
+  font-weight: 600;
+  font-size: var(--16px);
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.flex-center-col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-on{
+  flex: 1;
 }
