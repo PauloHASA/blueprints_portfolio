@@ -81,3 +81,26 @@ button {
 .absolute {
   position: absolute;
 }
+
+input.default-input {
+  width: 320px;
+  height: 48px;
+  border-radius: 4px;
+  background: #f8f8f8;
+  border: 1px solid #eeeeee;
+  padding-left: 12px;
+
+  margin-bottom: 24px;
+}
+
+input.focus-input:focus-within {
+  background: #fff;
+  outline: none;
+}
+
+.header-absolute-global {
+  top: 0px;
+  left: 12px;
+
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.registerClient-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .central-container-registerClient {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+
+    header {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        font-family: var(--font-Inter);
+        font-weight: 600;
+        font-size: var(--24px);
+        line-height: 100%;
+        margin-bottom: 12px;
+      }
+      h2 {
+        font-family: var(--font-Inter);
+        font-weight: 400;
+        font-size: var(--16px);
+        line-height: 100%;
+        letter-spacing: -1%;
+        text-align: center;
+        margin-bottom: 16px;
+        color: #a4a4a4;
+      }
+    }
+
+    h3 {
+      font-family: var(--font-Inter);
+      font-weight: 600;
+      font-size: var(--16px);
+      line-height: 100%;
+      margin-bottom: 16px;
+    }
+
+    button.default-btn.btn-RegisterClient {
+      width: 100%;
+    }
+  }
+}

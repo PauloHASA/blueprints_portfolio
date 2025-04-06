@@ -1,15 +1,35 @@
-import React from "react";
-import images from "../assets/ImageRouter";
+import React from 'react';
+import images from '../assets/ImageRouter';
+
+import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
+  const navigate = useNavigate();
 
-  return(
+  const handleToClient = () => {
+    navigate('/register/client');
+  };
+
+  const handleToCompany = () => {
+    navigate('/register/company');
+  };
+
+  const handleToConstruction = () => {
+    navigate('/register/construction');
+  };
+
+  const handleToProfessional = () => {
+    navigate('/register/profissional');
+  };
+
+  return (
     <div className="default-auth-page">
       <div className="flex-center-col central-container-RegisterPage ">
         <h1>Cadastre-se como</h1>
-        <section>
 
-          <div className="container-register">
+        <section>
+          <div className="container-register" onClick={handleToClient}>
             <header>
               <img src={images.icons.client} alt="" />
             </header>
@@ -19,7 +39,7 @@ function Register() {
             </footer>
           </div>
 
-          <div className="container-register">
+          <div className="container-register" onClick={handleToProfessional}>
             <header>
               <img src={images.icons.profissional} alt="" />
             </header>
@@ -29,7 +49,7 @@ function Register() {
             </footer>
           </div>
 
-          <div className="container-register">
+          <div className="container-register" onClick={handleToCompany}>
             <header>
               <img src={images.icons.empresa} alt="" />
             </header>
@@ -39,7 +59,7 @@ function Register() {
             </footer>
           </div>
 
-          <div className="container-register">
+          <div className="container-register" onClick={handleToConstruction}>
             <header>
               <img src={images.icons.construtora} alt="" />
             </header>
@@ -48,7 +68,6 @@ function Register() {
               <h4>Construtora</h4>
             </footer>
           </div>
-
         </section>
       </div>
     </div>
