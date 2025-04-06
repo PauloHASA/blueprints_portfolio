@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Login from './auth/Login';
 import Register from './auth/Register';
 
+import LandingPage from './components/LandingPage';
+
 import MainLayout from './layout/MainLayout';
 
 import './App.css'
@@ -13,9 +15,11 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<MainLayout />}>
-          <Route path="/login" element={ <Login />} />
-          <Route path="/register" element={ <Register />} />
-          
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/login" element={<Login />} />
+
+          <Route path="/register" element={<Register />} />
+
         </Route>
       </Routes>
     </Router>
